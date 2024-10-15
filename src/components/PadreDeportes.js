@@ -21,7 +21,7 @@ class PadreDeportes extends Component {
 
                 <h1>Su deporte favorito es: {this.state.favorito}</h1>
                 {this.deportes.map((deporte, index) => {
-                    return <HijoDeporte key={index} nombre={deporte} mostrarFavorito={this.mostrarFavorito}/>;
+                    return <HijoDeporte key={index} nombre={deporte} mostrarFavorito={this.mostrarFavorito} />;
                 })}
             </div>
         );

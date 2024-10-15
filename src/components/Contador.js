@@ -1,10 +1,10 @@
-import { Component } from 'react';
+import { Component } from "react";
 
 //Se puende declarar metodos fuera de la clase
 //estos metodos no pueden utilizar nada del component
 
 function metodoExterno() {
-    console.log('Metodo fuera del component');
+    console.log("Metodo fuera del component");
 }
 
 class Contador extends Component {
@@ -24,7 +24,6 @@ class Contador extends Component {
 
     //Metodo para cambiar el valor del state
     incrementarValorState = () => {
-
         // var titulos = []
 
         // titulos.push(<h1>Titulo 1</h1>);
@@ -42,16 +41,13 @@ class Contador extends Component {
     render() {
         return (
             <div>
-                <h1>Contador</h1>
-                <h2>Inicio del contador: {this.props.inicio}</h2>
-                <h2>Valor del state: {this.state.valor}</h2>
-
+                <h1> Contador </h1> <h2> Inicio del contador: {this.props.inicio} </h2>
+                <h2> Valor del state: {this.state.valor} </h2>
                 {/* 
                     La llamada a los metodos es mas sencilla 
                     NO se ponen los parentisis
                 */}
                 <button onClick={this.incrementarValorState}>Incrementar Valor</button>
-
                 <button
                     onClick={() => {
                         this.incrementarNumero();

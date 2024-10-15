@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import PadreNumeros from './components/PadreNumeros';
+// import PadreNumeros from './components/PadreNumeros';
+import Comic from './components/Comic';
+import Comics from './components/Comics';
 // import DibujosComplejos from './components/DibujosComplejos';
 // import DibujosComplejosReact from './components/DibujosComplejosReact';
 // import PadreDeportes from './components/PadreDeportes';
@@ -13,7 +15,7 @@ root.render(
   <React.StrictMode>
     {/* <Contador inicio='9'/>
     <Contador inicio='14'/> */}
-    <PadreNumeros/>
+    <Comics/>
   </React.StrictMode>
 );
 

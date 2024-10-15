@@ -20,9 +20,9 @@ class DibujosComplejosReact extends Component {
                 <button onClick={() => this.generarNombre()}>Generar Nombre</button>
                 {
                     //Esto es codigo react, sintaxis JSX, debe contener un return
-                    this.state.nombres.map((nombre, index)=>{
+                    this.state.nombres.map((nombre, index) => {
                         //Nunca debe estar vacio, siempre de contener un return
-                        return(<h1 key={index}>{nombre}</h1>)
+                        return (<h1 key={index}>{nombre}</h1>)
                     })
                 }
             </div>
